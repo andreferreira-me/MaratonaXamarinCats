@@ -11,9 +11,10 @@ namespace Cats
     {
         public App()
         {
-            InitializeComponent();
+            // The root page of your application
+            var content = new Views.CatsPage();
 
-            MainPage = new Cats.MainPage();
+            MainPage = new NavigationPage(content);
         }
 
         protected override void OnStart()
